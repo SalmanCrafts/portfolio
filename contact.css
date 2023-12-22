@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:  'monospace';
+    
+}
+body{
+    background-color: grey;
+    height: 100vh;
+    width: 100%;
+}
+#form{
+    padding: 2%;
+    height: 500px;
+    width: 500px;
+    background-color: whitesmoke;
+    color: skyblue;
+    position: absolute;
+    border-radius: 0px 10px;
+    border: 2px solid  darkcyan;
+    box-shadow: 20px  30px 40px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+h2{
+    font:bold;
+    font-size: 32px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 3%;
+    color: darkcyan;
+}
+#one{
+    font-size: 24px;
+    font-family: monospace;
+    color: #0099ff;
+
+}
+#email_int{
+    cursor: pointer;
+    font-size: 24px;
+    font: bold;
+    margin-top: 10px;
+    color: darkcyan;
+}
+.ip{
+    display: none;
+}
+#email_int:hover .ip{
+    display: block;
+}
+
+b{
+    font-size: 24px;
+    font: bold;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* Removes bullets for all li elements within the ul */
+}
+li a{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.so{
+    margin-bottom: 3%;
+    margin-left: 20px;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+@media only screen and (max-width: 768px) {
+    #form{
+      max-width: 80%; /* Limit width to prevent overflow */
+      margin: 0 auto; /* Center using margin instead of absolute positioning */
+    }
+    h2{
+        font-size: 22px;
+    }
+    #one{
+        font-size: 18px;
+    }
+    #email_int{
+        font-size: 19px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    body{
+        height: 80vh;
+    }
+    #form {
+    max-width: 80%;
+    font-size: 14px; /* Reduce font size for better readability */
+    padding: 10px; /* Adjust spacing for smaller viewport */
+    }
+    #email_int{
+        font-size:14px ;
+    }
+    li a{
+        font-size: 12px;
+    }
+  }
