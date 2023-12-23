@@ -1,6 +1,6 @@
 
 function copyEmail() {
-  let inputElement = "salman.mohammed.vlr@gmail.com";
+  let inputElement = "salman.mohammed.vellore@gmail.com";
 
   let notification = document.getElementById("notification");
   navigator.clipboard.writeText(inputElement);
